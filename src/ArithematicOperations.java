@@ -7,4 +7,8 @@ public class ArithematicOperations {
         this.firstnumber = firstnumber;
         this.secondnumber = secondnumber;
     }
+
+    public int addTwoNumbers(){
+        return (firstnumber+secondnumber);
+    }
 }
