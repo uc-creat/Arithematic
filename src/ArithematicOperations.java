@@ -19,4 +19,17 @@ public class ArithematicOperations {
     public int multiplyTwoNumbers() {
         return(firstnumber*secondnumber);
     }
+
+    public int divideTwoNumbers() {
+        try
+        {
+            return firstnumber/secondnumber;
+        }
+
+        catch (ArithmeticException e){
+            return (0);
+        }
+
+    }
+
 }

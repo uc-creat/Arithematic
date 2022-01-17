@@ -91,5 +91,35 @@ class ArithematicOperationsTest {
         }
     }
 
+    @Nested
+    class DivideTwoNumbers{
+
+        @Test
+        void divideTwoPositiveNumbers(){
+            assertEquals(1,bothpositive.divideTwoNumbers());
+        }
+
+        @Test
+        void divideTwoNegativeNumbers(){
+            assertEquals(1, bothnegative.divideTwoNumbers());
+        }
+
+        @Test
+        void divideFirstPositiveNumberWithSecondNegativeNumber(){
+            assertEquals(-1, firstpositivesecondnegative.divideTwoNumbers());
+        }
+
+        @Test
+        void divideFirstNegativeNumberWithSecondPositiveNumber(){
+            assertEquals(-1,firstnegativesecondpositive.divideTwoNumbers());
+        }
+
+        @Test
+        void divideANumberWithZero(){
+            ArithematicOperations dividebyzero = new ArithematicOperations(1,0);
+            assertEquals(0, dividebyzero.divideTwoNumbers());
+        }
+    }
+
 
 }
