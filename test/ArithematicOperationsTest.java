@@ -67,5 +67,29 @@ class ArithematicOperationsTest {
         }
     }
 
+    @Nested
+    class MultiplyTwoNumbers{
+
+        @Test
+        void multiplyTwoPositiveNumbers(){
+            assertEquals(1,bothpositive.multiplyTwoNumbers());
+        }
+
+        @Test
+        void multiplyTwoNegativeNumbers(){
+            assertEquals(1, bothnegative.multiplyTwoNumbers());
+        }
+
+        @Test
+        void multiplyFirstPositiveNumberWithSecondNegativeNumber(){
+            assertEquals(-1, firstpositivesecondnegative.multiplyTwoNumbers());
+        }
+
+        @Test
+        void multiplyFirstNegativeNumberWithSecondPositiveNumber(){
+            assertEquals(-1,firstnegativesecondpositive.multiplyTwoNumbers());
+        }
+    }
+
 
 }
