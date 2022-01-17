@@ -43,5 +43,29 @@ class ArithematicOperationsTest {
         }
     }
 
+    @Nested
+    class SubtractTwoNumbers{
+
+        @Test
+        void subtractTwoPositiveNumbers(){
+            assertEquals(0,bothpositive.subtractTwoNumbers());
+        }
+
+        @Test
+        void subtractTwoNegativeNumbers(){
+            assertEquals(0, bothnegative.subtractTwoNumbers());
+        }
+
+        @Test
+        void subtractFirstPositiveNumberWithSecondNegativeNumber(){
+            assertEquals(2, firstpositivesecondnegative.subtractTwoNumbers());
+        }
+
+        @Test
+        void subtractFirstNegativeNumberWithSecondPositiveNumber(){
+            assertEquals(-2,firstnegativesecondpositive.subtractTwoNumbers());
+        }
+    }
+
 
 }

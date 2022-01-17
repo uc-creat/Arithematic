@@ -11,4 +11,8 @@ public class ArithematicOperations {
     public int addTwoNumbers(){
         return (firstnumber+secondnumber);
     }
+
+    public int subtractTwoNumbers() {
+        return(firstnumber-secondnumber);
+    }
 }
